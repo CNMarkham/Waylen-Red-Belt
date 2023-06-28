@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyMovemnt : MonoBehaviour
 {
+    public int x1;
+    public int x2;
     public float yForce;
     public float xForce;
     public float xDirection;
@@ -30,12 +32,12 @@ public class EnemyMovemnt : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (transform.position.x <= -8)
+        if (transform.position.x <= -25)
         { 
             xDirection = 1;
             enemyRigidBody.AddForce(Vector2.right * xForce);
         }
-        if (transform.position.x >= 8)
+        if (transform.position.x >= -11)
         {
         xDirection = -1;
             enemyRigidBody.AddForce(Vector2.left * xForce);     

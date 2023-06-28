@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ab6ee63d024d04c9954acc8ff2c001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x1: 0
+  x2: 0
   yForce: 300
   xForce: 130
   xDirection: 1
@@ -947,11 +949,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.1445
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.8124
+      value: -10.16
       objectReference: {fileID: 0}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3548,6 +3550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ab6ee63d024d04c9954acc8ff2c001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yForce: 500
+  x1: -25
+  x2: -12
+  yForce: 300
   xForce: 140
   xDirection: -1
