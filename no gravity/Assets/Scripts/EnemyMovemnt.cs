@@ -32,12 +32,12 @@ public class EnemyMovemnt : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (transform.position.x <= -25)
+        if (transform.position.x <= x1)
         { 
             xDirection = 1;
             enemyRigidBody.AddForce(Vector2.right * xForce);
         }
-        if (transform.position.x >= -11)
+        if (transform.position.x >= x2)
         {
         xDirection = -1;
             enemyRigidBody.AddForce(Vector2.left * xForce);     
