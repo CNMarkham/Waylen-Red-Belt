@@ -20,7 +20,11 @@ public class Throwable : MonoBehaviour
         Vector3 throwablePosition = transform.position + offset;
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(objectThrown, throwablePosition, transform.rotation);
+             if (throwableCounter > 0)
+            {
+                
+            }
+             //Instantiate(objectThrown, throwablePosition, transform.rotation);
         }
         //offset = transform.localScale.x * new Vector3(1, 0, 0);
         //Vector3 throwablePosition = transform.position + offset;
