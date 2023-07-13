@@ -22,7 +22,8 @@ public class Throwable : MonoBehaviour
         {
              if (throwableCounter > 0)
             {
-                
+                Instantiate(objectThrown, throwablePosition, transform.rotation);
+                throwableCounter--;
             }
              //Instantiate(objectThrown, throwablePosition, transform.rotation);
         }
