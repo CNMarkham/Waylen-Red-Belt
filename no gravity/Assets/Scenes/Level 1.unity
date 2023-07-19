@@ -991,6 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5231125087504341997, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
+    - {fileID: 7772817310647752231, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
 --- !u!1 &911355091
 GameObject:
@@ -2045,6 +2046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avatar
       objectReference: {fileID: 0}
+    - target: {fileID: 919825731887471159, guid: 808b89f9746b7b7498a3a88b37ef5221, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 919825731887471166, guid: 808b89f9746b7b7498a3a88b37ef5221, type: 3}
       propertyPath: handPartNumber
       value: 0
@@ -2497,6 +2502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5231125087504341997, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
+    - {fileID: 7772817310647752231, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
 --- !u!1001 &1429147523
 PrefabInstance:
@@ -2563,6 +2569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5231125087504341997, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
+    - {fileID: 7772817310647752231, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
 --- !u!1 &1456375606
 GameObject:
@@ -2739,6 +2746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5231125087504341997, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
+    - {fileID: 7772817310647752231, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
 --- !u!1 &1597949246
 GameObject:
