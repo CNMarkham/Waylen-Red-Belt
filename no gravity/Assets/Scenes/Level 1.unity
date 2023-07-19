@@ -943,11 +943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1050108419035297500, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.03
+      value: -22.98
       objectReference: {fileID: 0}
     - target: {fileID: 1050108419035297500, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.33
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 1050108419035297500, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1230,7 +1230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.419123, y: 4.4958344, z: -43.61}
+  m_LocalPosition: {x: -14.156633, y: 4.495234, z: -43.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3836,7 +3836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd640756ff5cdbe4199985a2ccbbb6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectThrown: {fileID: 1075239471}
+  objectThrown: {fileID: 4092054434931541199, guid: fb7c3ba1f4cf0a145b6c5fd5e28992c1, type: 3}
   offset: {x: 0, y: 0, z: 0}
   throwableCounter: 0
 --- !u!1001 &2019075529

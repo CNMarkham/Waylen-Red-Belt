@@ -28,6 +28,11 @@ public class EnemyMovemnt : MonoBehaviour
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidBody.AddForce(jumpForce);
         }
+       
+        if(collision.gameObject.tag == "platypus")
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()
