@@ -32,9 +32,10 @@ public class EnemyMovemnt : MonoBehaviour
         if(collision.gameObject.tag == "platypus")
         {
             Destroy(gameObject);
+
         }
     }
-
+    
     private void FixedUpdate()
     {
         if (transform.position.x <= x1)

@@ -11,6 +11,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         direction = GameObject.FindGameObjectWithTag("Player").GetComponent<Throwable>();
+        Invoke("DestroyThrowable", 4);
     }
 
     // Update is called once per frame
@@ -23,4 +24,5 @@ public class Projectile : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
