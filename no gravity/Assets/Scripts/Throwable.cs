@@ -12,7 +12,7 @@ public class Throwable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        throwableCounter = 0; 
     }
 
     // Update is called once per frame
@@ -25,7 +25,8 @@ public class Throwable : MonoBehaviour
              if (throwableCounter > 0)
             {
                 Instantiate(objectThrown, throwablePosition, transform.rotation);
-                throwableCounter--;
+                throwableCounter -= 1;
+                collectableCounter.text = throwableCounter.ToString();
             }
              //Instantiate(objectThrown, throwablePosition, transform.rotation);
         }
@@ -34,11 +35,12 @@ public class Throwable : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Collectable"))
-        {
-
-            throwableCounter++;
+      if (collision.gameObject.CompareTag("Collectable"))
+      {
+            throwableCounter += 1;
             Destroy(collision.gameObject);
+            collectableCounter.text = throwableCounter.ToString(); 
         }
+
     }
 }
