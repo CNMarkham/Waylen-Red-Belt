@@ -9,6 +9,7 @@ public class EnemyMovemnt : MonoBehaviour
     public float xDirection;
 
     private Rigidbody2D enemyRigidBody;
+    public GameObject pOrtAl;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +32,11 @@ public class EnemyMovemnt : MonoBehaviour
        
         if(collision.gameObject.tag == "platypus")
         {
+           
             Destroy(gameObject);
-
+            pOrtAl.GetComponent<Teleport>().enemyCount -= 1;
         }
+
     }
     
     private void FixedUpdate()
