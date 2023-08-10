@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EnemyCollision : MonoBehaviour
+public class StartScene : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,12 +16,9 @@ public class EnemyCollision : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Enemy")
-        {
-            SceneManager.LoadScene(0);
 
-        }
+    public void OnMouseDown()
+    {
+        SceneManager.LoadScene(0);
     }
 }
