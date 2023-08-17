@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Teleport : MonoBehaviour
+public class Teleport2 : MonoBehaviour
 {
+
     public int enemyCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,7 @@ public class Teleport : MonoBehaviour
         if (collision.gameObject.tag == "Player" && enemyCount == 0)
         {
 
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 
