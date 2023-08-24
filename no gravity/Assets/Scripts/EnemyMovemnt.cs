@@ -29,16 +29,22 @@ public class EnemyMovemnt : MonoBehaviour
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidBody.AddForce(jumpForce);
         }
-       
-        if(collision.gameObject.tag == "platypus")
+
+        if (pOrtAl.GetComponent<Teleport>() && collision.gameObject.tag == "platypus")
         {
            
             Destroy(gameObject);
             pOrtAl.GetComponent<Teleport>().enemyCount -= 1;
         }
 
+        if (pOrtAl.GetComponent<Teleport2>() && collision.gameObject.tag == "platypus")
+        {
+            pOrtAl.GetComponent<Teleport2>().enemyCount -= 1;
+            Destroy(gameObject);
+        }
+
     }
-    
+
     private void FixedUpdate()
     {
         if (transform.position.x <= x1)
