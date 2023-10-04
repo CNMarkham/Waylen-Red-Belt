@@ -6,7 +6,7 @@ public class TriggerFinishLine : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Codey")
         {
             print("You Win!");
         }
