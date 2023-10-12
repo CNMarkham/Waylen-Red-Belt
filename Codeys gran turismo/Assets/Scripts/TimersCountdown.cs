@@ -10,6 +10,7 @@ public class TimersCountdown : MonoBehaviour
 
     public float totalLapTime;
     public float totalCountdownTime;
+    public CodeyMove Speed;
 
     
     void Update()
@@ -19,5 +20,10 @@ public class TimersCountdown : MonoBehaviour
 
         laptime.text=Mathf.Round(totalLapTime).ToString();
         startCountdown.text=Mathf.Round(totalCountdownTime).ToString();
+
+        if (totalCountdownTime > 0)
+        {
+            Time.deltaTime -1
+        }
     }
 }
