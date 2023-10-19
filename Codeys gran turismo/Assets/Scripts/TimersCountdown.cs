@@ -26,7 +26,7 @@ public class TimersCountdown : MonoBehaviour
             startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
             PinkCodey.Speed = 0;
         }
-        if (totalCountdownTime -= 0)
+        if (totalCountdownTime >= 0)
         {
 
         }
