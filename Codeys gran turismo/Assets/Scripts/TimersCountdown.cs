@@ -22,8 +22,8 @@ public class TimersCountdown : MonoBehaviour
 
         if (totalCountdownTime >= 0)
         {
-            -Time.deltaTime;
-            startCountdown = newValue();
+            totalCountdownTime -= Time.deltaTime;
+            startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
             PinkCodey.Speed = 0;
         }
 
@@ -32,7 +32,7 @@ public class TimersCountdown : MonoBehaviour
             startCountdown.text = ("0");
             totalLapTime -= Time.deltaTime;
             laptime.text = Mathf.Round(totalLapTime).ToString();
-            PinkCodey.Speed = 69;
+            PinkCodey.Speed = 40;
         }
         if (totalCountdownTime <= 0)
         {
