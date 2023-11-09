@@ -20,18 +20,19 @@ public class TimersCountdown : MonoBehaviour
         laptime.text=Mathf.Round(totalLapTime).ToString();
         startCountdown.text=Mathf.Round(totalCountdownTime).ToString();
 
-        if (totalCountdownTime > 0)
+        if (totalCountdownTime >= 0)
         {
-            totalCountdownTime -= Time.deltaTime;
-            startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+            -Time.deltaTime;
+            startCountdown = newValue();
             PinkCodey.Speed = 0;
         }
+
         if (totalCountdownTime <= 0)
         {
             startCountdown.text = ("0");
             totalLapTime -= Time.deltaTime;
             laptime.text = Mathf.Round(totalLapTime).ToString();
-            PinkCodey.Speed = 40;
+            PinkCodey.Speed = 69;
         }
         if (totalCountdownTime <= 0)
         {
