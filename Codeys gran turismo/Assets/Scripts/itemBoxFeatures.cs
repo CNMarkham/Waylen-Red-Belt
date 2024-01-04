@@ -21,11 +21,12 @@ public class itemBoxFeatures : MonoBehaviour
         if (collision.gameObject.tag == "Codey")
         {
             gameObject.SetActive(false);
+            Invoke("itemBoxRespawn", 2);
         }
     }
 
     private void itemBoxRespawn()
     {
-        //gameObject.SetActive(true);
+        gameObject.SetActive(true);
     }
 }
