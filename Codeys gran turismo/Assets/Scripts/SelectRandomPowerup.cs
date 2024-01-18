@@ -29,9 +29,9 @@ public class SelectRandomPowerup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space) && chosenPowerup != null)
         {
-
+            Instantiate(chosenPowerup, transform.position + transform.forward, transform.rotation);
         }
 
     }
