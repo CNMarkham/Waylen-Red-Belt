@@ -5,16 +5,24 @@ using UnityEngine.AI;
 
 public class NavMeshMovement : MonoBehaviour
 {
-     NavMeshAgent posNav;
+    public NavMeshAgent posNav;
+    public GameObject goal;
+    
+
     // Start is called before the first frame update
     void Start()
     {
+        goal = GameObject.FindGameObjectWithTag("po");
         posNav.destination = goal.transform.position;
+         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        agent.destination = goal.transform.position;
+        if (collision.gameObject.tag == "po")
+        {
+            Destroy(collision.gameObject);
+        }
     }
+
 }
