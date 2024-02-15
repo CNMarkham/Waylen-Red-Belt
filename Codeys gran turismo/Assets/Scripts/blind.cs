@@ -10,7 +10,7 @@ public class blind : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        image=GameObject.Findcanvas/Image.getcomponent.Image
+        image = GameObject.Find("Canvas/Image").GetComponent<Image>();
         //make player blind
         //make colour a 288
         image.color = new Color(1, 1, 1, 1);
@@ -20,6 +20,13 @@ public class blind : MonoBehaviour
     void Update()
     {
         //make colour a decrease by teeny tiny umpalumpa small amount
+        image.color = new Color(1, 1, 1, - 0.1f);
+
+
         //detroy if colourrrrrrrrrrrrrrrrrrrrrrrrrrrr a reaches 00000000000
+        if (image.color.a <= (0))
+        {
+            Destroy(gameObject);
+        }
     }
 }
