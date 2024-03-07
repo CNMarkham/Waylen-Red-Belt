@@ -22,6 +22,7 @@ public class respawn : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Hi!REMEMBER TO CHECK YOUR KIDS IN!!!");
         if (collision.gameObject.tag == ("gucci"))
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

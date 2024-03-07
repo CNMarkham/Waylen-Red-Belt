@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimersCountdown : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class TimersCountdown : MonoBehaviour
             totalCountdownTime -= Time.deltaTime;
             startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
             BlackCodey.Speed = 0;
+            
         }
 
         if (totalCountdownTime <= 0)
@@ -32,9 +34,9 @@ public class TimersCountdown : MonoBehaviour
             startCountdown.text = ("0");
             totalLapTime -= Time.deltaTime;
             laptime.text = Mathf.Round(totalLapTime).ToString();
-            BlackCodey.Speed = 40;
+            BlackCodey.Speed = 1000;
         }
-        if (totalCountdownTime <= 0)
+        if (totalCountdownTime < 0)
         {
             Debug.Log("Time is Up");
         }
