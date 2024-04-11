@@ -21,8 +21,7 @@ public class itemBoxFeatures : MonoBehaviour
         if (collision.gameObject.tag == "Codey")
         {
             gameObject.SetActive(false);
-            itemBoxRespawn();
-            //Invoke("itemBoxRespawn", 2);
+            Invoke("itemBoxRespawn", 2);
         }
     }
 

@@ -36,9 +36,5 @@ public class TimersCountdown : MonoBehaviour
             laptime.text = Mathf.Round(totalLapTime).ToString();
             BlackCodey.Speed = 1000;
         }
-        if (totalCountdownTime < 0)
-        {
-            Debug.Log("Time is Up");
-        }
     }
 }
