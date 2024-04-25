@@ -26,7 +26,6 @@ public class TimersCountdown : MonoBehaviour
             totalCountdownTime -= Time.deltaTime;
             startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
             BlackCodey.Speed = 0;
-            
         }
 
         if (totalCountdownTime <= 0)
